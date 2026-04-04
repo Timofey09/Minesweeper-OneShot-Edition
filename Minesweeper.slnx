@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="Minesweeper/Minesweeper.csproj" Id="aadff519-a32e-4a66-be1e-274df103608e">
+    <BuildType Project="Release" />
+  </Project>
+</Solution>

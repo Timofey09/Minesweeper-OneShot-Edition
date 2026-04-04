@@ -1,0 +1,114 @@
+﻿using AxWMPLib;
+using System;
+using System.Drawing;
+using System.IO;
+using System.Windows.Forms;
+
+namespace Minesweeper
+{
+    public partial class DifficultySelector : Form
+    {
+        private bool suppressScrollSound = false;
+
+        public DifficultySelector()
+        {
+            InitializeComponent();
+            this.Shown += DifficultySelector_Shown;
+        }
+
+        private void DifficultySelector_Shown(object sender, EventArgs e)
+        {
+            label1.Font = new Font(Program.pfc.Families[0], 22, FontStyle.Regular);
+            label2.Font = new Font(Program.pfc.Families[0], 20, FontStyle.Regular);
+            label3.Font = new Font(Program.pfc.Families[0], 12, FontStyle.Regular);
+            label4.Font = new Font(Program.pfc.Families[0], 19, FontStyle.Regular);
+            label5.Font = new Font(Program.pfc.Families[0], 19, FontStyle.Regular);
+            LaunchButton.Font = new Font(Program.pfc.Families[0], 15, FontStyle.Regular);
+
+            suppressScrollSound = true; 
+
+            if (Program.MapWidth == 9 && Program.MapHeight == 9) difficultyTrackBar.Value = 0;
+            else if (Program.MapWidth == 16 && Program.MapHeight == 16) difficultyTrackBar.Value = 1;
+            else if (Program.MapWidth == 30 && Program.MapHeight == 16) difficultyTrackBar.Value = 2;
+            else if (Program.MapWidth == 35 && Program.MapHeight == 25) difficultyTrackBar.Value = 3;
+            else difficultyTrackBar.Value = 0;
+
+            suppressScrollSound = false; 
+            UpdateDifficultyUI(); 
+        }
+
+        private void difficultyTrackBar_Scroll(object sender, EventArgs e)
+        {
+            UpdateDifficultyUI();
+        }
+
+        private void UpdateDifficultyUI()
+        {
+            int lastValue = -1;
+            if (difficultyTrackBar.Value == lastValue) return;
+            lastValue = difficultyTrackBar.Value;
+
+            if (!suppressScrollSound)
+            {
+                Program.PlayTickSound();
+            }
+
+            switch (difficultyTrackBar.Value)
+            {
+                case 0:
+                    SetDifficulty(9, 9, 10, "Новичок", "Отличный вариант для первого прохождения...", Color.MediumVioletRed);
+                    break;
+                case 1:
+                    SetDifficulty(16, 16, 40, "Любитель", "Уже умеете играть? Тогда эта сложность для вас", Color.MediumVioletRed);
+                    break;
+                case 2:
+                    SetDifficulty(30, 16, 99, "Профи", "Проверьте свои силы на минном поле реальной сложности", Color.MediumVioletRed);
+                    break;
+                case 3:
+                    Program.MapWidth = 35;
+                    Program.MapHeight = 25;
+                    Program.MinesCount = 300;
+                    difficultyTrackBar.BackColor = Color.Red;
+                    label2.ForeColor = Color.Red;
+                    label2.Text = "БЕЗУМИЕ";
+                    label3.ForeColor = Color.Red;
+                    label3.Text = "875 клеток. 300 мин. Один шанс. Ты точно этого хочешь?";
+                    label4.ForeColor = Color.Red;
+                    label4.Text = "Поле: 3̸̤̇̌5̷͕̅͒͐x̴͖͇͋͘̚2̴̧̬̈́̇͗5̷͚̂̃";
+                    label5.ForeColor = Color.Red;
+                    label5.Text = "Мины: 3̷̫̟̈́̀0̷̧̯̫͝0̴̥̙̪̐";
+                    break;
+            }
+        }
+
+        private void SetDifficulty(int w, int h, int m, string title, string desc, Color color)
+        {
+            Program.MapWidth = w;
+            Program.MapHeight = h;
+            Program.MinesCount = m;
+            difficultyTrackBar.BackColor = color;
+            label2.ForeColor = Color.White;
+            label2.Text = title;
+            label3.ForeColor = Color.White;
+            label3.Text = desc;
+            label4.ForeColor = Color.White;
+            label4.Text = "Поле: " + w + "x" + h;
+            label5.ForeColor = Color.White;
+            label5.Text = "Мины: " + m;
+        }
+
+        private void LaunchButton_Click(object sender, EventArgs e)
+        {
+            Program.StopBGM();
+            Program.PlayStartSound();
+            new GameForm().Show();
+            this.Hide();
+        }
+
+        private void DifficultySelector_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            new MainMenu().Show();
+            Program.PlayNoSound();
+        }
+    }
+}

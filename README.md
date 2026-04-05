@@ -1,4 +1,7 @@
 # Minesweeper (OneShot Edition)
+
+### This is a fan-made non-commercial project.
+
 ## How to install:
 1. Download from Releases page,
 2. Unzip all files to a easy-accessible folder on your PC,

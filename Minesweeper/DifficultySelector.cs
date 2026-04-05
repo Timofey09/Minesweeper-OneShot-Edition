@@ -1,4 +1,5 @@
 ﻿using AxWMPLib;
+using Minesweeper.Properties;
 using System;
 using System.Drawing;
 using System.IO;
@@ -56,13 +57,13 @@ namespace Minesweeper
             switch (difficultyTrackBar.Value)
             {
                 case 0:
-                    SetDifficulty(9, 9, 10, "Новичок", "Отличный вариант для первого прохождения...", Color.MediumVioletRed);
+                    SetDifficulty(9, 9, 10, Properties.Resources.Difficulty0Name, Properties.Resources.Difficulty0Description, Color.MediumVioletRed);
                     break;
                 case 1:
-                    SetDifficulty(16, 16, 40, "Любитель", "Уже умеете играть? Тогда эта сложность для вас", Color.MediumVioletRed);
+                    SetDifficulty(16, 16, 40, Properties.Resources.Difficulty1Name, Properties.Resources.Difficulty1Description, Color.MediumVioletRed);
                     break;
                 case 2:
-                    SetDifficulty(30, 16, 99, "Профи", "Проверьте свои силы на минном поле реальной сложности", Color.MediumVioletRed);
+                    SetDifficulty(30, 16, 99, Properties.Resources.Difficulty2Name, Properties.Resources.Difficulty2Description, Color.MediumVioletRed);
                     break;
                 case 3:
                     Program.MapWidth = 35;
@@ -70,13 +71,13 @@ namespace Minesweeper
                     Program.MinesCount = 300;
                     difficultyTrackBar.BackColor = Color.Red;
                     label2.ForeColor = Color.Red;
-                    label2.Text = "БЕЗУМИЕ";
+                    label2.Text = Properties.Resources.Difficulty3Name;
                     label3.ForeColor = Color.Red;
-                    label3.Text = "875 клеток. 300 мин. Один шанс. Ты точно этого хочешь?";
+                    label3.Text = Properties.Resources.Difficulty3Description;
                     label4.ForeColor = Color.Red;
-                    label4.Text = "Поле: 3̸̤̇̌5̷͕̅͒͐x̴͖͇͋͘̚2̴̧̬̈́̇͗5̷͚̂̃";
+                    label4.Text = Properties.Resources.Field + ": 3̸̤̇̌5̷͕̅͒͐x̴͖͇͋͘̚2̴̧̬̈́̇͗5̷͚̂̃";
                     label5.ForeColor = Color.Red;
-                    label5.Text = "Мины: 3̷̫̟̈́̀0̷̧̯̫͝0̴̥̙̪̐";
+                    label5.Text = Properties.Resources.Mines + ": 3̷̫̟̈́̀0̷̧̯̫͝0̴̥̙̪̐";
                     break;
             }
         }
@@ -92,9 +93,9 @@ namespace Minesweeper
             label3.ForeColor = Color.White;
             label3.Text = desc;
             label4.ForeColor = Color.White;
-            label4.Text = "Поле: " + w + "x" + h;
+            label4.Text = Properties.Resources.Field + ": " + w + "x" + h;
             label5.ForeColor = Color.White;
-            label5.Text = "Мины: " + m;
+            label5.Text = Properties.Resources.Mines + ": " + m;
         }
 
         private void LaunchButton_Click(object sender, EventArgs e)

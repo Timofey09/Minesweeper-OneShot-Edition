@@ -21,6 +21,7 @@ namespace Minesweeper
         
         public MainMenu()
         {
+            //System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en-US"); // Временная строка для проверки англ. локализации
             InitializeComponent();
             resourcesPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Resources");
             Version v = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version;
@@ -46,7 +47,10 @@ namespace Minesweeper
                     SettingsButton.Font = new Font(Program.pfc.Families[0], 11, FontStyle.Regular);
                 }
             }
-            catch { }
+            catch (Exception ex)
+            {
+                MessageBox.Show(Properties.Resources.ErrorMsgBox + ex.Message, "Fatal Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void HowToPlay_Click(object sender, EventArgs e)

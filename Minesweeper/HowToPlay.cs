@@ -15,7 +15,7 @@ namespace Minesweeper
         public HowToPlay()
         {
             InitializeComponent();
-            label1.Text = "Сапёр — игра несложная.\r\nОна полностью построена на логике и иногда на везении.\r\n\r\nТвоя цель — открыть всё игровое поле,\r\nпометив места с минами флажками 🚩.\r\n\r\nЛевой кнопкой мыши открывай клетки.\r\nПравой кнопкой мыши ставь или убирай флаг.\r\n\r\nЕсли ты открыл клетку с миной — игра окончена.\r\nЦифры в клетках показывают, сколько мин находится рядом с этой клеткой.\r\nБудь внимателен, думай наперёд и постарайся очистить всё поле без ошибок.\r\n\r\nУдачи," + Program.userName + "!\r\n";
+            label1.Text = Properties.Resources.HowToPlayText + Program.userName + "!";
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -28,6 +28,12 @@ namespace Minesweeper
         {
             label1.Font = new Font(Program.pfc.Families[0], 12, FontStyle.Regular);
             button1.Font = new Font(Program.pfc.Families[0], 14, FontStyle.Regular);
+            label2.Font = new Font(Program.pfc.Families[0], 12, FontStyle.Regular);
+            label3.Font = new Font(Program.pfc.Families[0], 12, FontStyle.Regular);
+            label4.Font = new Font(Program.pfc.Families[0], 12, FontStyle.Regular);
+            label2.Text = Properties.Resources.Cell;
+            label3.Text = Properties.Resources.Mine;
+            label4.Text = Properties.Resources.Flag;
         }
     }
 }

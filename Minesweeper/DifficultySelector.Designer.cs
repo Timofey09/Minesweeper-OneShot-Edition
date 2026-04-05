@@ -45,120 +45,75 @@
             // 
             // label1
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label1.AutoSize = true;
+            resources.ApplyResources(this.label1, "label1");
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(152, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(254, 33);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Выберите сложность";
             // 
             // difficultyTrackBar
             // 
+            resources.ApplyResources(this.difficultyTrackBar, "difficultyTrackBar");
             this.difficultyTrackBar.BackColor = System.Drawing.Color.MediumVioletRed;
-            this.difficultyTrackBar.Dock = System.Windows.Forms.DockStyle.Left;
             this.difficultyTrackBar.LargeChange = 1;
-            this.difficultyTrackBar.Location = new System.Drawing.Point(0, 0);
             this.difficultyTrackBar.Maximum = 3;
             this.difficultyTrackBar.Name = "difficultyTrackBar";
-            this.difficultyTrackBar.Orientation = System.Windows.Forms.Orientation.Vertical;
-            this.difficultyTrackBar.Size = new System.Drawing.Size(45, 248);
-            this.difficultyTrackBar.TabIndex = 1;
             this.difficultyTrackBar.Scroll += new System.EventHandler(this.difficultyTrackBar_Scroll);
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
+            resources.ApplyResources(this.label3, "label3");
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(65, 85);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(500, 18);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Отличный вариант для первого прохождения или изучения игровых механик";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
+            resources.ApplyResources(this.label2, "label2");
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(63, 54);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(98, 29);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Новичок";
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
+            resources.ApplyResources(this.label4, "label4");
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(63, 122);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(119, 29);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Поле: 9x9";
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
+            resources.ApplyResources(this.label5, "label5");
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(63, 160);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(108, 29);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "Мины: 10";
             // 
             // LaunchButton
             // 
+            resources.ApplyResources(this.LaunchButton, "LaunchButton");
             this.LaunchButton.BackColor = System.Drawing.Color.MidnightBlue;
             this.LaunchButton.FlatAppearance.BorderColor = System.Drawing.Color.Gold;
             this.LaunchButton.FlatAppearance.BorderSize = 2;
-            this.LaunchButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.LaunchButton.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.LaunchButton.ForeColor = System.Drawing.Color.White;
-            this.LaunchButton.Location = new System.Drawing.Point(241, 204);
             this.LaunchButton.Name = "LaunchButton";
-            this.LaunchButton.Size = new System.Drawing.Size(96, 35);
-            this.LaunchButton.TabIndex = 6;
-            this.LaunchButton.Text = "Начать";
             this.LaunchButton.UseVisualStyleBackColor = false;
             this.LaunchButton.Click += new System.EventHandler(this.LaunchButton_Click);
             // 
             // axWindowsMediaPlayer1
             // 
-            this.axWindowsMediaPlayer1.Enabled = true;
-            this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(449, 213);
+            resources.ApplyResources(this.axWindowsMediaPlayer1, "axWindowsMediaPlayer1");
             this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
             this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
-            this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(1, 1);
-            this.axWindowsMediaPlayer1.TabIndex = 7;
-            this.axWindowsMediaPlayer1.Visible = false;
             // 
             // axWindowsMediaPlayer2
             // 
-            this.axWindowsMediaPlayer2.Enabled = true;
-            this.axWindowsMediaPlayer2.Location = new System.Drawing.Point(374, 127);
+            resources.ApplyResources(this.axWindowsMediaPlayer2, "axWindowsMediaPlayer2");
             this.axWindowsMediaPlayer2.Name = "axWindowsMediaPlayer2";
             this.axWindowsMediaPlayer2.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer2.OcxState")));
-            this.axWindowsMediaPlayer2.Size = new System.Drawing.Size(1, 1);
-            this.axWindowsMediaPlayer2.TabIndex = 8;
-            this.axWindowsMediaPlayer2.Visible = false;
             // 
             // DifficultySelector
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(588, 248);
             this.Controls.Add(this.axWindowsMediaPlayer2);
             this.Controls.Add(this.axWindowsMediaPlayer1);
             this.Controls.Add(this.LaunchButton);
@@ -170,11 +125,8 @@
             this.Controls.Add(this.label1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "DifficultySelector";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Выбор сложности";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.DifficultySelector_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.difficultyTrackBar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();

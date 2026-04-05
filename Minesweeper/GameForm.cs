@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.IO;
 using System.Runtime.InteropServices;
 using System.Drawing.Text;
+using Minesweeper.Properties;
 
 namespace Minesweeper
 {
@@ -129,7 +130,7 @@ namespace Minesweeper
                 ShakeWindow(800,18);
             }
             
-            var result = MessageBox.Show(Message, "Судьба мира", MessageBoxButtons.YesNo, IconType);
+            var result = MessageBox.Show(Message, Properties.Resources.World_sFate, MessageBoxButtons.YesNo, IconType);
 
             if (result == DialogResult.Yes)
             {
@@ -178,11 +179,10 @@ namespace Minesweeper
             {
                 if (!Program.NikoJumpscareDone)
                 {
-                    string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Resources", "Niko_Message.png");
-
-                    System.Media.SystemSounds.Hand.Play();
-
-                    Process p = Process.Start(new ProcessStartInfo(path) { UseShellExecute = true });
+                    System.Drawing.Bitmap bitmap = Properties.Resources.niko_message;
+                    string tempPath = System.IO.Path.Combine(System.IO.Path.GetTempPath(), "niko_message.png");
+                    bitmap.Save(tempPath, System.Drawing.Imaging.ImageFormat.Png);
+                    Process p = Process.Start(new ProcessStartInfo(tempPath) { UseShellExecute = true });
                     Program.NikoJumpscareDone = true;
 
                     await Task.Run(() => {
@@ -190,7 +190,10 @@ namespace Minesweeper
                     });
                 }
             }
-            catch { }
+            catch (Exception ex)
+            {
+                MessageBox.Show(Properties.Resources.ErrorMsgBox + ex.Message, "Fatal Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         void CheckWin()
@@ -210,7 +213,7 @@ namespace Minesweeper
             this.BeginInvoke(new Action(() =>
             {
                 Program.PlayWinSound();
-                ShowEndDialog("Нико донёс Солнце до самой вершины!\nСвет вернулся в этот мир, и теперь все будет хорошо.\nМы справились, " + Program.userName + ".\n\nХочешь пережить это приключение снова?", MessageBoxIcon.None);
+                ShowEndDialog(Properties.Resources.EndDialogWin1 + Program.userName + ". \n\n" + Properties.Resources.EndDialogWin2, MessageBoxIcon.None);
             }));
         }
 
@@ -286,7 +289,7 @@ namespace Minesweeper
             gameOver = true;
             RevealAllMines();
             Invalidate();
-            this.BeginInvoke(new Action(() => ShowEndDialog("Лампочка разбилась... \nУ Нико не было второго шанса, и этот мир угас навсегда. \nТебе не удалось его спасти, "+ Program.userName + ". " + "\n\nПопробовать восстановить мир из пепла?", MessageBoxIcon.Warning)));
+            this.BeginInvoke(new Action(() => ShowEndDialog(Properties.Resources.EndDialogLose1 + Program.userName + ". \n\n" + Properties.Resources.EndDialogLose2,MessageBoxIcon.Warning)));
         }
 
         private void GameForm_MouseDown(object sender, MouseEventArgs e)

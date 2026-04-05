@@ -9,3 +9,5 @@
 - Windows 7 or newer (8, 10, 11),
 - 512 MB RAM and more.
 - .NET 4.7.2 (will be offered to download if not)
+
+### Currently only on Russian. English and other language localization in future releases

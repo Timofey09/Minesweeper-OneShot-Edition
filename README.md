@@ -15,3 +15,6 @@
 - .NET 4.7.2 (will be offered to download if not)
 
 ### Available in English and Russian. Game detects language automatically by system language.
+
+<img width="802" height="482" alt="Screenshot 2026-04-05 181631" src="https://github.com/user-attachments/assets/4ace9cc6-d9a6-442e-a8ab-7ca401bd9689" />
+<img width="590" height="280" alt="Screenshot 2026-04-05 181545" src="https://github.com/user-attachments/assets/f7a271ff-5c76-40cb-8a02-5620d73b639f" />

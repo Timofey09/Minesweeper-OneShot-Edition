@@ -1,6 +1,6 @@
 # Minesweeper (OneShot Edition)
 
-<img width="599" height="363" alt="Снимок экрана 2026-04-01 045257" src="https://github.com/user-attachments/assets/a2fc867d-19be-4128-a344-454957f80b56" /> <img width="227" height="257" alt="Снимок экрана 2026-04-05 051647" src="https://github.com/user-attachments/assets/436b5a49-dc5b-49e0-bfc2-3a99932e3de7" />
+<img width="599" height="363" alt="Screenshot 2026-04-05 181537" src="https://github.com/user-attachments/assets/5f7786e2-55aa-4b10-bdd5-1bd64bfcc1e9" /> <img width="227" height="257" alt="Снимок экрана 2026-04-05 051647" src="https://github.com/user-attachments/assets/436b5a49-dc5b-49e0-bfc2-3a99932e3de7" />
 
 ### This is a fan-made non-commercial project.
 
@@ -15,4 +15,4 @@
 - 512 MB RAM and more.
 - .NET 4.7.2 (will be offered to download if not)
 
-### Currently only on Russian. English and other language localization in future releases
+### Available in English and Russian. Game detects language automatically by system language.

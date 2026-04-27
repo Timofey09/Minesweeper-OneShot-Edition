@@ -175,7 +175,7 @@
   <data name="EndDialogLose1" xml:space="preserve">
     <value>Лампочка разбилась... 
 У Нико не было второго шанса, и этот мир угас навсегда. 
-Тебе не удалось его спасти,  </value>
+Тебе не удалось его спасти, </value>
   </data>
   <data name="EndDialogLose2" xml:space="preserve">
     <value>Хочешь попытаться восстановить мир из пепла?</value>

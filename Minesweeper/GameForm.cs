@@ -428,7 +428,7 @@ namespace Minesweeper
                 if (random.Next(1, 100) == 1)
                 {
                     this.Text = Properties.Resources.Scare1 + Program.UserName + "?";
-                    Thread.Sleep(1000);
+                    await Task.Delay(1000);
                     this.Text = Properties.Resources.DefaultGameFormName;
                     Program.Scare1 = true;
                 }

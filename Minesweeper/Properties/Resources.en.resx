@@ -166,9 +166,6 @@ mistakes.
 
 Good luck, </value>
   </data>
-  <data name="Mine" xml:space="preserve">
-    <value>Mine</value>
-  </data>
   <data name="Cell" xml:space="preserve">
     <value>Cell</value>
   </data>

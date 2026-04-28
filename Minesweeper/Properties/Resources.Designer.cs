@@ -240,15 +240,6 @@ namespace Minesweeper.Properties {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Мина.
-        /// </summary>
-        internal static string Mine {
-            get {
-                return ResourceManager.GetString("Mine", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Ищет локализованную строку, похожую на Мины.
         /// </summary>
         internal static string Mines {

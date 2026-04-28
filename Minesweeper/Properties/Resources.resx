@@ -163,9 +163,6 @@
 
 Удачи, </value>
   </data>
-  <data name="Mine" xml:space="preserve">
-    <value>Мина</value>
-  </data>
   <data name="Cell" xml:space="preserve">
     <value>Клетка</value>
   </data>

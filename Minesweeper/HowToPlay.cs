@@ -31,9 +31,6 @@ namespace Minesweeper
             label2.Font = new Font(Program.pfc.Families[0], 12, FontStyle.Regular);
             label3.Font = new Font(Program.pfc.Families[0], 12, FontStyle.Regular);
             label4.Font = new Font(Program.pfc.Families[0], 12, FontStyle.Regular);
-            label2.Text = Properties.Resources.Cell;
-            label3.Text = Properties.Resources.Mine;
-            label4.Text = Properties.Resources.Flag;
         }
     }
 }

@@ -66,7 +66,7 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.MidnightBlue;
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(12)))), ((int)(((byte)(30)))));
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Gold;
             this.button1.FlatAppearance.BorderSize = 2;
             resources.ApplyResources(this.button1, "button1");

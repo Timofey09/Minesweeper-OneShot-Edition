@@ -52,8 +52,8 @@
             // 
             // difficultyTrackBar
             // 
-            resources.ApplyResources(this.difficultyTrackBar, "difficultyTrackBar");
             this.difficultyTrackBar.BackColor = System.Drawing.Color.MediumVioletRed;
+            resources.ApplyResources(this.difficultyTrackBar, "difficultyTrackBar");
             this.difficultyTrackBar.LargeChange = 1;
             this.difficultyTrackBar.Maximum = 3;
             this.difficultyTrackBar.Name = "difficultyTrackBar";
@@ -89,10 +89,10 @@
             // 
             // LaunchButton
             // 
-            resources.ApplyResources(this.LaunchButton, "LaunchButton");
-            this.LaunchButton.BackColor = System.Drawing.Color.MidnightBlue;
+            this.LaunchButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(12)))), ((int)(((byte)(30)))));
             this.LaunchButton.FlatAppearance.BorderColor = System.Drawing.Color.Gold;
             this.LaunchButton.FlatAppearance.BorderSize = 2;
+            resources.ApplyResources(this.LaunchButton, "LaunchButton");
             this.LaunchButton.ForeColor = System.Drawing.Color.White;
             this.LaunchButton.Name = "LaunchButton";
             this.LaunchButton.UseVisualStyleBackColor = false;

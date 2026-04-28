@@ -21,6 +21,7 @@ namespace Minesweeper
         public static bool SFXEnabled = true;
         public static bool NikoJumpscareDone = false;
         public static bool Scare1 = false;
+        public static bool NightMsgBox = false;
         public static WindowsMediaPlayer bgmPlayer = new WindowsMediaPlayer();
         public static PrivateFontCollection pfc = new PrivateFontCollection();
         /// <summary>

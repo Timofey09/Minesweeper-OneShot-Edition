@@ -204,4 +204,13 @@ We did it, </value>
   <data name="DefaultGameFormName" xml:space="preserve">
     <value>Minesweeper</value>
   </data>
+  <data name="NightMessage1" xml:space="preserve">
+    <value>It's really late. You look tired... maybe you should take a break and get some sleep? It's </value>
+  </data>
+  <data name="NightMessage2" xml:space="preserve">
+    <value> already. I'll be here when you wake up. Goodnight.</value>
+  </data>
+  <data name="NightMessageTitle" xml:space="preserve">
+    <value>Go to sleep, </value>
+  </data>
 </root>

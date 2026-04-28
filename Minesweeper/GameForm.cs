@@ -411,15 +411,24 @@ namespace Minesweeper
             }
         }
 
-        private void ScareTimer_Tick(object sender, EventArgs e)
+        private async void Timer_Tick(object sender, EventArgs e)
         {
             Random random = new Random();
+            DateTime now = DateTime.Now;
+
+            if (!Program.NightMsgBox && now.Hour <= 3 && now.Hour >= 2)
+            {
+                Program.NightMsgBox = true;
+                await Task.Delay(10000);
+                MessageBox.Show(Properties.Resources.NightMessage1 + now.ToString("HH:mm") + Properties.Resources.NightMessage2, Properties.Resources.NightMessageTitle + Program.UserName);
+            }
+
             if (!Program.Scare1)
             {
                 if (random.Next(1, 100) == 1)
                 {
                     this.Text = Properties.Resources.Scare1 + Program.UserName + "?";
-                    Thread.Sleep(750);
+                    Thread.Sleep(1000);
                     this.Text = Properties.Resources.DefaultGameFormName;
                     Program.Scare1 = true;
                 }

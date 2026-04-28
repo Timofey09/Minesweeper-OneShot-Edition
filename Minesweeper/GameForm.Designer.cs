@@ -32,7 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GameForm));
             this.axWindowsMediaPlayer2 = new AxWMPLib.AxWindowsMediaPlayer();
             this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
-            this.ScareTimer = new System.Windows.Forms.Timer(this.components);
+            this.Timer = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
             this.SuspendLayout();
@@ -49,11 +49,11 @@
             this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
             this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
             // 
-            // ScareTimer
+            // Timer
             // 
-            this.ScareTimer.Enabled = true;
-            this.ScareTimer.Interval = 1000;
-            this.ScareTimer.Tick += new System.EventHandler(this.ScareTimer_Tick);
+            this.Timer.Enabled = true;
+            this.Timer.Interval = 1000;
+            this.Timer.Tick += new System.EventHandler(this.Timer_Tick);
             // 
             // GameForm
             // 
@@ -77,6 +77,6 @@
 
         private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer1;
         private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer2;
-        private System.Windows.Forms.Timer ScareTimer;
+        private System.Windows.Forms.Timer Timer;
     }
 }

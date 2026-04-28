@@ -249,6 +249,33 @@ namespace Minesweeper.Properties {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Тебе стоит отдохнуть... может стоит взять перерыв и поспать? Уже .
+        /// </summary>
+        internal static string NightMessage1 {
+            get {
+                return ResourceManager.GetString("NightMessage1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на  ночи. Я буду ждать тебя тут. Спокойной ночи..
+        /// </summary>
+        internal static string NightMessage2 {
+            get {
+                return ResourceManager.GetString("NightMessage2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Иди спать, .
+        /// </summary>
+        internal static string NightMessageTitle {
+            get {
+                return ResourceManager.GetString("NightMessageTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap niko_message {

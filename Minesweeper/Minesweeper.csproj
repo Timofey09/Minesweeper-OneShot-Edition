@@ -123,31 +123,31 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="About.en-US.resx">
+    <EmbeddedResource Include="About.en.resx">
       <DependentUpon>About.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="About.resx">
       <DependentUpon>About.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DifficultySelector.en-US.resx">
+    <EmbeddedResource Include="DifficultySelector.en.resx">
       <DependentUpon>DifficultySelector.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DifficultySelector.resx">
       <DependentUpon>DifficultySelector.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GameForm.en-US.resx">
+    <EmbeddedResource Include="GameForm.en.resx">
       <DependentUpon>GameForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GameForm.resx">
       <DependentUpon>GameForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HowToPlay.en-US.resx">
+    <EmbeddedResource Include="HowToPlay.en.resx">
       <DependentUpon>HowToPlay.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HowToPlay.resx">
       <DependentUpon>HowToPlay.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainMenu.en-US.resx">
+    <EmbeddedResource Include="MainMenu.en.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainMenu.resx">
@@ -167,7 +167,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.en.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Settings.en-US.resx">
+    <EmbeddedResource Include="Settings.en.resx">
       <DependentUpon>Settings.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Settings.resx">

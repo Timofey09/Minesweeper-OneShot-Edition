@@ -49,7 +49,7 @@ namespace Minesweeper
             }
             catch (Exception ex)
             {
-                MessageBox.Show(Properties.Resources.ErrorMsgBox + ex.Message, "Fatal Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(Properties.Resources.ErrorMsgBox + ex.Message, "Fatal Error: Font load failed.", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

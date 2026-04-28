@@ -178,7 +178,7 @@ Good luck, </value>
   <data name="EndDialogLose1" xml:space="preserve">
     <value>The sun has shattered...
 Niko didn't have a second chance...
-You failed to save him, </value>
+You failed to save them, </value>
   </data>
   <data name="EndDialogLose2" xml:space="preserve">
     <value>Wanna try to rebuild the world from dust?</value>
@@ -200,5 +200,11 @@ We did it, </value>
   </data>
   <data name="ErrorMsgBox" xml:space="preserve">
     <value>The World Machine encountered a fatal error:</value>
+  </data>
+  <data name="Scare1" xml:space="preserve">
+    <value>Are you still here, </value>
+  </data>
+  <data name="DefaultGameFormName" xml:space="preserve">
+    <value>Minesweeper</value>
   </data>
 </root>

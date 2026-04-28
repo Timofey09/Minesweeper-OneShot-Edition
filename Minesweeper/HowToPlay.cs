@@ -15,7 +15,7 @@ namespace Minesweeper
         public HowToPlay()
         {
             InitializeComponent();
-            label1.Text = Properties.Resources.HowToPlayText + Program.userName + "!";
+            label1.Text = Properties.Resources.HowToPlayText + Program.UserName + "!";
         }
 
         private void button1_Click(object sender, EventArgs e)

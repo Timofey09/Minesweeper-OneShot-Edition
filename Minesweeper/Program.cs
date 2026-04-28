@@ -12,7 +12,7 @@ namespace Minesweeper
 {
     internal static class Program
     {
-        public static string userName = Environment.UserName;
+        public static string UserName = Environment.UserName;
         public static int MapWidth = 9;
         public static int MapHeight = 9;
         public static int MinesCount = 10;
@@ -20,6 +20,7 @@ namespace Minesweeper
         public static bool MusicEnabled = true;
         public static bool SFXEnabled = true;
         public static bool NikoJumpscareDone = false;
+        public static bool Scare1 = false;
         public static WindowsMediaPlayer bgmPlayer = new WindowsMediaPlayer();
         public static PrivateFontCollection pfc = new PrivateFontCollection();
         /// <summary>

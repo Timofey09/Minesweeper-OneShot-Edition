@@ -51,7 +51,7 @@
             // NewGameButton
             // 
             resources.ApplyResources(this.NewGameButton, "NewGameButton");
-            this.NewGameButton.BackColor = System.Drawing.Color.MidnightBlue;
+            this.NewGameButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(12)))), ((int)(((byte)(30)))));
             this.NewGameButton.FlatAppearance.BorderColor = System.Drawing.Color.Gold;
             this.NewGameButton.FlatAppearance.BorderSize = 2;
             this.NewGameButton.ForeColor = System.Drawing.Color.White;
@@ -62,11 +62,11 @@
             // HowToPlayButton
             // 
             resources.ApplyResources(this.HowToPlayButton, "HowToPlayButton");
-            this.HowToPlayButton.BackColor = System.Drawing.Color.MidnightBlue;
+            this.HowToPlayButton.BackColor = System.Drawing.Color.Black;
             this.HowToPlayButton.Cursor = System.Windows.Forms.Cursors.Help;
-            this.HowToPlayButton.FlatAppearance.BorderColor = System.Drawing.Color.Gold;
-            this.HowToPlayButton.FlatAppearance.BorderSize = 2;
-            this.HowToPlayButton.ForeColor = System.Drawing.Color.White;
+            this.HowToPlayButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(100)))), ((int)(((byte)(255)))));
+            this.HowToPlayButton.FlatAppearance.BorderSize = 4;
+            this.HowToPlayButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(100)))), ((int)(((byte)(255)))));
             this.HowToPlayButton.Name = "HowToPlayButton";
             this.HowToPlayButton.UseVisualStyleBackColor = false;
             this.HowToPlayButton.Click += new System.EventHandler(this.HowToPlay_Click);
@@ -74,7 +74,7 @@
             // SettingsButton
             // 
             resources.ApplyResources(this.SettingsButton, "SettingsButton");
-            this.SettingsButton.BackColor = System.Drawing.Color.MidnightBlue;
+            this.SettingsButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(12)))), ((int)(((byte)(30)))));
             this.SettingsButton.FlatAppearance.BorderColor = System.Drawing.Color.Gold;
             this.SettingsButton.FlatAppearance.BorderSize = 2;
             this.SettingsButton.ForeColor = System.Drawing.Color.White;

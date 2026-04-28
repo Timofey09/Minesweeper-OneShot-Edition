@@ -198,4 +198,10 @@
   <data name="ErrorMsgBox" xml:space="preserve">
     <value>Мировая Машина столкнулась с критической ошибкой. Пожалуйста сообщите разработчику. </value>
   </data>
+  <data name="Scare1" xml:space="preserve">
+    <value>Ты еще тут, </value>
+  </data>
+  <data name="DefaultGameFormName" xml:space="preserve">
+    <value>Сапёр</value>
+  </data>
 </root>

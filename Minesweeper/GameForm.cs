@@ -7,6 +7,7 @@ using System.IO;
 using System.Runtime.InteropServices;
 using System.Drawing.Text;
 using Minesweeper.Properties;
+using System.Threading;
 
 namespace Minesweeper
 {
@@ -213,7 +214,7 @@ namespace Minesweeper
             this.BeginInvoke(new Action(() =>
             {
                 Program.PlayWinSound();
-                ShowEndDialog(Properties.Resources.EndDialogWin1 + Program.userName + ". \n\n" + Properties.Resources.EndDialogWin2, MessageBoxIcon.None);
+                ShowEndDialog(Properties.Resources.EndDialogWin1 + Program.UserName + ". \n\n" + Properties.Resources.EndDialogWin2, MessageBoxIcon.None);
             }));
         }
 
@@ -287,9 +288,10 @@ namespace Minesweeper
                 NikoJumpscare();
             }
             gameOver = true;
+            Program.Scare1 = false;
             RevealAllMines();
             Invalidate();
-            this.BeginInvoke(new Action(() => ShowEndDialog(Properties.Resources.EndDialogLose1 + Program.userName + ". \n\n" + Properties.Resources.EndDialogLose2,MessageBoxIcon.Warning)));
+            this.BeginInvoke(new Action(() => ShowEndDialog(Properties.Resources.EndDialogLose1 + Program.UserName + ". \n\n" + Properties.Resources.EndDialogLose2,MessageBoxIcon.Warning)));
         }
 
         private void GameForm_MouseDown(object sender, MouseEventArgs e)
@@ -394,6 +396,7 @@ namespace Minesweeper
         private void GameForm_FormClosed(object sender, FormClosedEventArgs e)
         {
             Program.NikoJumpscareDone = false;
+            Program.Scare1 = false;
             foreach (Form f in Application.OpenForms)
             {
                 if (f is MainMenu menu)
@@ -404,6 +407,21 @@ namespace Minesweeper
                         menu.MainMenu_Load(null, null); 
                     }
                     break;
+                }
+            }
+        }
+
+        private void ScareTimer_Tick(object sender, EventArgs e)
+        {
+            Random random = new Random();
+            if (!Program.Scare1)
+            {
+                if (random.Next(1, 100) == 1)
+                {
+                    this.Text = Properties.Resources.Scare1 + Program.UserName + "?";
+                    Thread.Sleep(750);
+                    this.Text = Properties.Resources.DefaultGameFormName;
+                    Program.Scare1 = true;
                 }
             }
         }

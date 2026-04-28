@@ -70,6 +70,15 @@ namespace Minesweeper.Properties {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Сапёр.
+        /// </summary>
+        internal static string DefaultGameFormName {
+            get {
+                return ResourceManager.GetString("DefaultGameFormName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Отличный вариант для первого прохождения.
         /// </summary>
         internal static string Difficulty0Description {
@@ -255,6 +264,15 @@ namespace Minesweeper.Properties {
             get {
                 object obj = ResourceManager.GetObject("niko_message", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Ты еще тут, .
+        /// </summary>
+        internal static string Scare1 {
+            get {
+                return ResourceManager.GetString("Scare1", resourceCulture);
             }
         }
         

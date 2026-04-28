@@ -66,10 +66,10 @@
             // 
             // button1
             // 
-            resources.ApplyResources(this.button1, "button1");
             this.button1.BackColor = System.Drawing.Color.MidnightBlue;
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Gold;
             this.button1.FlatAppearance.BorderSize = 2;
+            resources.ApplyResources(this.button1, "button1");
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Name = "button1";
             this.button1.UseVisualStyleBackColor = false;

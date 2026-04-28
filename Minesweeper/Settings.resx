@@ -118,206 +118,22 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="SFXSwitch.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="MusicSwitch.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>137, 33</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>379, 288</value>
-  </data>
-  <data name="&gt;&gt;MusicSwitch.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;MusicSwitch.Name" xml:space="preserve">
-    <value>MusicSwitch</value>
-  </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>96, 36</value>
-  </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="SFXSwitch.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 37</value>
-  </data>
-  <data name="button1.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="SFXSwitch.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="button1.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="&gt;&gt;button1.Name" xml:space="preserve">
-    <value>button1</value>
-  </data>
-  <data name="&gt;&gt;SFXSwitch.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;SFXSwitch.Name" xml:space="preserve">
-    <value>SFXSwitch</value>
-  </data>
-  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+  <data name="MusicSwitch.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Comic Sans MS, 18pt</value>
   </data>
   <data name="MusicSwitch.Location" type="System.Drawing.Point, System.Drawing">
     <value>116, 96</value>
   </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Настройки</value>
-  </data>
-  <data name="&gt;&gt;SFXSwitch.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="MusicSwitch.Size" type="System.Drawing.Size, System.Drawing">
-    <value>122, 37</value>
-  </data>
-  <data name="MusicSwitch.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="SFXSwitch.Location" type="System.Drawing.Point, System.Drawing">
-    <value>116, 154</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="SFXSwitch.Text" xml:space="preserve">
-    <value>Звуки</value>
-  </data>
-  <data name="button1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Comic Sans MS, 11.25pt</value>
-  </data>
-  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 44</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="MusicSwitch.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
-  <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
-  </data>
-  <data name="&gt;&gt;MusicSwitch.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>8, 16</value>
-  </data>
-  <data name="label1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;MusicSwitch.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="button1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="&gt;&gt;button1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        AAABAAEAICAAAAEAIACoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAABAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABJSUkASUlJAUtLSwlLS0sNSkpKCklJSQZKSkoFSUlJB0tL
-        Sw9LS0saS0tLE0tLSxNKSkoOSkpKDUtLSxZLS0sbSkpKCT09PQBISEgAQkJCAENDQwBBQUEBQkJCAUJC
-        QgAAAAAAAAAAAAAAAAAAAAAAREREAERERAFFRUUESUlJBkpKSgdJSUkLS0tLKUtLS0tLS0tLS0tLREtL
-        S0NLS0tHS0tLUEtLS1tLS0tWS0tLVUtLS01LS0tNS0tLVktLS1hLS0tAS0tLLEtLSyVLS0slS0tLKEtL
-        SyFJSUkIVlZWAD4+PgAAAAAAAAAAACAgIABLS0sARkZGA0lJSRBLS0sgS0tLM0tLS0dLS0tXS0tLYUtL
-        S2NLS0tjS0tLYktLS2JLS0thS0tLYEtLS15MTExeUFBQeUxMTF1LS0tZS0tLV0tLS1VLS0tQS0tLTEtL
-        S0pLS0tKS0tLPEtLSx5LS0sRS0tLBkpKSgAAAAAAGhoaAE9PTwBEREQCSkpKCktLSxVLS0shS0tLM0tL
-        S0xLS0tVS0tLVExMTF5NTU1jS0tLUklJSVFLS0tNS0tLR0tLS4FVVVXNT09PT0tLSz5LS0s8S0tLOEtL
-        SzRLS0swS0tLLktLSyxLS0spS0tLI0tLSxlLS0sLS0tLAQAAAAAAAAAAAAAAAAAAAAAAAAAASEhIAFpa
-        WgBKSkoIS0tLIEtLSydNTU0hREREbUNDQ7lWVlZPf39/ilRUVDZFRUVXSEhI4lpaWutUVFRGSkpKIEtL
-        Sx1LS0sYS0tLFEtLSxNLS0sSS0tLEEtLSwpLS0sES0tLA0tLSwJLS0sAAAAAAAAAAABfX18Ae3t7AGpq
-        ahZeXl4Le3t7AEdHRwBJSUkBQUFBAAAAAAA4ODiUOjo6/FNTU8KxsLHpc3Nzcj4+PsFOTk7/XFxc9lZW
-        Vkg/Pz8ES0tLBEpKSgJISEgBVlZWAEpKSgFLS0sCSkpKASoqKgBHR0cAAAAAAAAAAAAAAAAAAAAAAF9f
-        XwB9fX0AdXV1W3h4eLFYWFhTR0dHEFxcXABkZGQHbm5uQF1dXdhpaWn/aGho/9PT0/+Li4vzfn5+/YaG
-        hv90dHT/ZGRkZ2RkZABWVlYANzY3AEFBQQlWVVY6Y2NjQUtLSwBfX18AAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAGNjYwBgYGAvgoKC6n5+fvlXV1fBTk5OcW1tbaR2dnbvenp6/2xsbP93d3f/6urq/6io
-        qP9+fn7/p6en/7Kysv+wsLDYqKioZVBQUCw+Pj5qS0tLuGZmZutsbGxicnJyAF5eXgAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAVVVVAEJCQgppaWm7l5eX/4eHh/9lZWX+bGxs/2RkZP9aWlr/TU1N/4mJ
-        if/09PT/x8fH/2VlZf91dXX/jIyM/6mpqf+7u7v3g4OD6VRUVP1qamr/dXV12GVlZR1mZmYAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABeXl4AV1dXAFRUVHp6enr/m5ub/319ff9vb2//aWlp/2Nj
-        Y/9cXFz/bW1t/5WVlf93d3f/T09P/1tbW/9sbGz/gICA/5GRkf+SkpL/mpqa/3p6ev9ra2udVFRUBGJi
-        YgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFtbWwBiYmIAZWVlZnV1df6Ghob/f39//3t7
-        e/93d3f/cnJy/2tra/9hYWH/VlZW/0xMTP9FRUX/RkZG/1VVVf9oaWj/V1dX/0hISP9lZWX/enp6/5CQ
-        kLNoaGgMa2trAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAaWlpAGVlZR6EhITOhISE/3l5
-        ef9/f3//hISE/4SEhP96enr/bW1t/2lpaf9mZmb/XFxc/1JRUv9HR0f/RUVF/1FRUf9TU1P/aWlp/6en
-        p//Ozs7/oqKikf///wBmZmYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFVVVQDS0dIAf39/eo6O
-        jv93d3f/dXV1/4ODg/+Ghob/eHh4/1paWv9DQ0P/WFhY/3BwcP9qamr/X19f/1RUVP9JSUn/RERE/35+
-        fv/Z2dn/8PDw/7Kysv+wsLDQj4+PHJaWlgBWV1YAAAAAAAAAAAAAAAAAAAAAAFJSUhJGRkYpPz8/VVBQ
-        UIl0dHTjampq/1JSUv9YWFj/iYmJ/4yMjP9YWFj/kJCQ/3p6ev9iYmL/c3Nz/3d3d/9sbGz/YGBg/1VV
-        Vf9HR0f/Xl5e/9DQ0P+9vb3/j4+P/7S0tPxjY2O6RkZGeE1NTUVZWVkhZGRkCGRkZAAAAAAAVVVVj1BQ
-        UOVJSUn8XV1d/6ysrP/Ly8v/vr6+/6urq/+enp7/l5eX/1dXV/+SkpL/s7Oz/5CQkP+BgYH/hISE/3h4
-        eP9oaGj/W1tb/1FQUf9ERET/WVlZ/3Jycv9/f3//rKys/4WEhf9ra2v/c3Nz+nJycsBmZmYrampqAAAA
-        AABaWloYWlpahFlZWfBtbW3/nZ2d/6+vr//s7Oz/8/Pz/7e3t/+0tLT/i4uL/4aGhv+zs7P/rKys/5mZ
-        mf+Kior/XFxc/z09Pf9AQED/UE9Q/0xMTP9DREP/VldW/3Jycv+fn5//qKio/4uLi/2AgIC8c3NzN0lJ
-        SQFlZWUAAAAAAFhYWABYWFgEU1NTUH5+ftm2trb/kpKS/5ubm//IyMj/xMTE/8jIyP/FxcX/uLi4/7e3
-        t/+xsbH/p6en/4SEhP9PT0//QUFB/0BAQP9QUFD/UVBR/0ZGRv9MTEz/Z2dn/46Ojv+Xl5f5dXV1j2Bg
-        YBZ0c3QAGhoaAAAAAAAAAAAAAAAAAERFRAAEBAQDbW1tm4uLi/+2trb/vLy8/83Nzf/Z2dn/29vb/9ra
-        2v/U1NT/ysrK/76+vv+ysrL/lZWV/4WFhf+enp7/o6Oj/2lpaf9XV1f/S0tL/0ZGRv9eXl7/a2tr/2Fh
-        YepbW1szY2NjAA4ODgAAAAAAAAAAAAAAAABCQkIAODg4EUZGRoJVVVXwe3t7/7q6uv/W1tb/4uLi/+rq
-        6v/t7e3/6+vr/+Tk5P/Z2dn/y8vL/7y8vP+rq6v/rKys/8HBwf+srKz/dHR0/19fX/9PT0//RERE/1lZ
-        Wf+MjIz/dnZ2/1lZWcJJSUk6AAAAASoqKgAAAAAAAAAAAHx8fD6FhYW2n5+f/cjIyP/f39//zczN/+Tk
-        5P/y8vL/+fn5//38/f/7+vv/8/Pz/+bm5v/W1tb/xcXF/7Ozs/+oqKj/oKCg/4qKiv9xcXH/YmJi/1NT
-        U/9DQ0P/YGBg/+Hh4f/p6en/w8PD/5ubm+aIiIhud3d3DH5+fgAAAAAAjY2Ne6ysrL28vLzjw8LD+cfH
-        x//Dw8P/6urq//r6+v/8/Pz/4+Pj/+Hh4f/n5+f/5OTk/9vb2//Kysr/uLi4/6enp/+VlZX/e3t7/2Fh
-        Yf9gYGD/VVVV/0RERP9eXl7/ycnJ/9DQ0P7KysrwwcHB06ampp19fX0niYmJAAAAAAAAAAAAOjk6CVpa
-        WiNmZmZOkZGRyNHR0f/x8fH//v3+/8nJyf9vb2//mZmZ/8rKyv/MzMz/0dHR/8vLy/+5ubn/p6en/52d
-        nf+VlJX/dnZ2/15eXv9VVVX/RUVF/1ZWVv9+fn71dXV1fmlpaTVTU1MUHR0dAz4+PgAAAAAAAAAAAAAA
-        AAAAAAAAZmZmAM7OzgCysrJb3Nzc+u3t7f/8/Pz/rq6u/2pqav+6urr/5ubm/8vLy//FxcX/yMjI/7i4
-        uP+lpaX/o6Oj/7CwsP+MjIz/YGBg/1RUVP9GRkb/Xl5e/3V1dbZoaGgMa2trAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAABdXV0AV1dXAFZWVlNqamr4mJiY/9bW1v+0tLT/kZGR/9nZ2f/Ozs7/wMDA/8vL
-        y//FxcX/s7Oz/5+fn/+MjIz/qqqq/6Ojo/9mZmb/UlJS/01NTf9gYGDpZmZmQ2dnZwBRUVEAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAF9fXwAAAAAAUlJSbUtLS/eUlJT/09PT/7u7u//CwsL/1tbW/9bW
-        1v/Z2dn/0tLS/8LCwv+xsbH/mpqa/4CAgP+CgoL/n5+f/3Jycv9VVVX/Xl5e/2BgYKxRUVEFXFxcAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAW1tbAEpKSgBHR0dRgICA+OTk5P/p6en/xMTE/97e
-        3v/o6Oj/39/f/9HR0f/IyMj/urq6/6ioqP+mpqb/h4eH/3BwcP94eHj/eXl5/4aGhv+tra3/fHx80lFR
-        URhbW1sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABWVlYABQUFBHx8fKLLy8v/y8vL8JiY
-        mLuoqKi8ysrK+aurq/+3t7f/uLi4/7e3t/+JiYn/m5ub/97e3v+hoaH/f39//5iYmP6IiIj0oKCg/NjY
-        2P+pqan3ZWVlTG1tbQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHZ2dgBzc3MkpKSktays
-        rIl2dnY6Pj4+C6WlpQ6BgYFxZmZm9c7Ozv/m5ub/r6+v/4iIiP97e3v/0dHR/52dnf6Kiorhi4uLlGtr
-        a0JxcXF1mZmZz7y8vP6QkJCT////AF5eXgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeHh4AHZ2
-        dg2AgIAWBgYGATAwMAAAAAAAUFBQAENDQxxsbGzc4ODg/9XV1fuDg4PQioqK929vb/2zs7P/mpqa3GFh
-        YTJMTEwCUVFRAAAAAABYWFgXkZGRYpaWlo5nZ2cQaWlpAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABVVVUAKCgoCn19fcDc3Nz/oKCgtFJSUihvb2+7bW1tp5OT
-        k9OZmZmkAAAAAl1dXQAAAAAAAAAAAA4ODgD///8Abm5uCWpqagRnZ2cAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFtbWwAAAAAAl5eXn729vdFwcHAogICAAGho
-        aDVlZWUffn5+SIWFhU+cnJwAWlpaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAY2NjANvb2wCUlJRqmJiYTeHh
-        4QAmJiYAAAAAAEBAQAA/Pz8CRkZGBERERAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAA/gAB5+AAAAfgAAAB4AAAAP4AAAHzYACP8IAOP/AAAD/wAAA/+AAAP/gA
-        AD/wAAB/8AAAPwAAAAMAAAADAAAAA4AAAA/AAAAfgAAABwAAAAMAAAADgAAAB/AAAD/wAAB/8AAAf/AA
-        AH/gAAB/4AAAf+OADD//gB8//8Q////PP/8=
-</value>
-  </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterScreen</value>
+  <data name="MusicSwitch.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 46</value>
   </data>
   <data name="MusicSwitch.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -325,8 +141,125 @@
   <data name="MusicSwitch.Text" xml:space="preserve">
     <value>Музыка</value>
   </data>
+  <data name="&gt;&gt;MusicSwitch.Name" xml:space="preserve">
+    <value>MusicSwitch</value>
+  </data>
+  <data name="&gt;&gt;MusicSwitch.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MusicSwitch.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;MusicSwitch.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="SFXSwitch.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="SFXSwitch.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Comic Sans MS, 18pt</value>
+  </data>
+  <data name="SFXSwitch.Location" type="System.Drawing.Point, System.Drawing">
+    <value>116, 154</value>
+  </data>
+  <data name="SFXSwitch.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="SFXSwitch.Size" type="System.Drawing.Size, System.Drawing">
+    <value>123, 46</value>
+  </data>
+  <data name="SFXSwitch.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="SFXSwitch.Text" xml:space="preserve">
+    <value>Звуки</value>
+  </data>
+  <data name="&gt;&gt;SFXSwitch.Name" xml:space="preserve">
+    <value>SFXSwitch</value>
+  </data>
+  <data name="&gt;&gt;SFXSwitch.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SFXSwitch.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;SFXSwitch.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Comic Sans MS, 18pt</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>96, 36</value>
+  </data>
+  <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>172, 42</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Настройки</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="button1.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="button1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Comic Sans MS, 11.25pt</value>
+  </data>
+  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 225</value>
+  </data>
+  <data name="button1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 44</value>
+  </data>
+  <data name="button1.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="button1.Text" xml:space="preserve">
+    <value>Об игре</value>
+  </data>
+  <data name="&gt;&gt;button1.Name" xml:space="preserve">
+    <value>button1</value>
+  </data>
+  <data name="&gt;&gt;button1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>8, 16</value>
   </data>
   <data name="$this.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -15930,34 +15863,101 @@
         rkJggg==
 </value>
   </data>
-  <data name="SFXSwitch.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="$this.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>379, 288</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAICAAAAEAIACoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAABAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABJSUkASUlJAUtLSwlLS0sNSkpKCklJSQZKSkoFSUlJB0tL
+        Sw9LS0saS0tLE0tLSxNKSkoOSkpKDUtLSxZLS0sbSkpKCT09PQBISEgAQkJCAENDQwBBQUEBQkJCAUJC
+        QgAAAAAAAAAAAAAAAAAAAAAAREREAERERAFFRUUESUlJBkpKSgdJSUkLS0tLKUtLS0tLS0tLS0tLREtL
+        S0NLS0tHS0tLUEtLS1tLS0tWS0tLVUtLS01LS0tNS0tLVktLS1hLS0tAS0tLLEtLSyVLS0slS0tLKEtL
+        SyFJSUkIVlZWAD4+PgAAAAAAAAAAACAgIABLS0sARkZGA0lJSRBLS0sgS0tLM0tLS0dLS0tXS0tLYUtL
+        S2NLS0tjS0tLYktLS2JLS0thS0tLYEtLS15MTExeUFBQeUxMTF1LS0tZS0tLV0tLS1VLS0tQS0tLTEtL
+        S0pLS0tKS0tLPEtLSx5LS0sRS0tLBkpKSgAAAAAAGhoaAE9PTwBEREQCSkpKCktLSxVLS0shS0tLM0tL
+        S0xLS0tVS0tLVExMTF5NTU1jS0tLUklJSVFLS0tNS0tLR0tLS4FVVVXNT09PT0tLSz5LS0s8S0tLOEtL
+        SzRLS0swS0tLLktLSyxLS0spS0tLI0tLSxlLS0sLS0tLAQAAAAAAAAAAAAAAAAAAAAAAAAAASEhIAFpa
+        WgBKSkoIS0tLIEtLSydNTU0hREREbUNDQ7lWVlZPf39/ilRUVDZFRUVXSEhI4lpaWutUVFRGSkpKIEtL
+        Sx1LS0sYS0tLFEtLSxNLS0sSS0tLEEtLSwpLS0sES0tLA0tLSwJLS0sAAAAAAAAAAABfX18Ae3t7AGpq
+        ahZeXl4Le3t7AEdHRwBJSUkBQUFBAAAAAAA4ODiUOjo6/FNTU8KxsLHpc3Nzcj4+PsFOTk7/XFxc9lZW
+        Vkg/Pz8ES0tLBEpKSgJISEgBVlZWAEpKSgFLS0sCSkpKASoqKgBHR0cAAAAAAAAAAAAAAAAAAAAAAF9f
+        XwB9fX0AdXV1W3h4eLFYWFhTR0dHEFxcXABkZGQHbm5uQF1dXdhpaWn/aGho/9PT0/+Li4vzfn5+/YaG
+        hv90dHT/ZGRkZ2RkZABWVlYANzY3AEFBQQlWVVY6Y2NjQUtLSwBfX18AAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAGNjYwBgYGAvgoKC6n5+fvlXV1fBTk5OcW1tbaR2dnbvenp6/2xsbP93d3f/6urq/6io
+        qP9+fn7/p6en/7Kysv+wsLDYqKioZVBQUCw+Pj5qS0tLuGZmZutsbGxicnJyAF5eXgAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAVVVVAEJCQgppaWm7l5eX/4eHh/9lZWX+bGxs/2RkZP9aWlr/TU1N/4mJ
+        if/09PT/x8fH/2VlZf91dXX/jIyM/6mpqf+7u7v3g4OD6VRUVP1qamr/dXV12GVlZR1mZmYAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABeXl4AV1dXAFRUVHp6enr/m5ub/319ff9vb2//aWlp/2Nj
+        Y/9cXFz/bW1t/5WVlf93d3f/T09P/1tbW/9sbGz/gICA/5GRkf+SkpL/mpqa/3p6ev9ra2udVFRUBGJi
+        YgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFtbWwBiYmIAZWVlZnV1df6Ghob/f39//3t7
+        e/93d3f/cnJy/2tra/9hYWH/VlZW/0xMTP9FRUX/RkZG/1VVVf9oaWj/V1dX/0hISP9lZWX/enp6/5CQ
+        kLNoaGgMa2trAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAaWlpAGVlZR6EhITOhISE/3l5
+        ef9/f3//hISE/4SEhP96enr/bW1t/2lpaf9mZmb/XFxc/1JRUv9HR0f/RUVF/1FRUf9TU1P/aWlp/6en
+        p//Ozs7/oqKikf///wBmZmYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFVVVQDS0dIAf39/eo6O
+        jv93d3f/dXV1/4ODg/+Ghob/eHh4/1paWv9DQ0P/WFhY/3BwcP9qamr/X19f/1RUVP9JSUn/RERE/35+
+        fv/Z2dn/8PDw/7Kysv+wsLDQj4+PHJaWlgBWV1YAAAAAAAAAAAAAAAAAAAAAAFJSUhJGRkYpPz8/VVBQ
+        UIl0dHTjampq/1JSUv9YWFj/iYmJ/4yMjP9YWFj/kJCQ/3p6ev9iYmL/c3Nz/3d3d/9sbGz/YGBg/1VV
+        Vf9HR0f/Xl5e/9DQ0P+9vb3/j4+P/7S0tPxjY2O6RkZGeE1NTUVZWVkhZGRkCGRkZAAAAAAAVVVVj1BQ
+        UOVJSUn8XV1d/6ysrP/Ly8v/vr6+/6urq/+enp7/l5eX/1dXV/+SkpL/s7Oz/5CQkP+BgYH/hISE/3h4
+        eP9oaGj/W1tb/1FQUf9ERET/WVlZ/3Jycv9/f3//rKys/4WEhf9ra2v/c3Nz+nJycsBmZmYrampqAAAA
+        AABaWloYWlpahFlZWfBtbW3/nZ2d/6+vr//s7Oz/8/Pz/7e3t/+0tLT/i4uL/4aGhv+zs7P/rKys/5mZ
+        mf+Kior/XFxc/z09Pf9AQED/UE9Q/0xMTP9DREP/VldW/3Jycv+fn5//qKio/4uLi/2AgIC8c3NzN0lJ
+        SQFlZWUAAAAAAFhYWABYWFgEU1NTUH5+ftm2trb/kpKS/5ubm//IyMj/xMTE/8jIyP/FxcX/uLi4/7e3
+        t/+xsbH/p6en/4SEhP9PT0//QUFB/0BAQP9QUFD/UVBR/0ZGRv9MTEz/Z2dn/46Ojv+Xl5f5dXV1j2Bg
+        YBZ0c3QAGhoaAAAAAAAAAAAAAAAAAERFRAAEBAQDbW1tm4uLi/+2trb/vLy8/83Nzf/Z2dn/29vb/9ra
+        2v/U1NT/ysrK/76+vv+ysrL/lZWV/4WFhf+enp7/o6Oj/2lpaf9XV1f/S0tL/0ZGRv9eXl7/a2tr/2Fh
+        YepbW1szY2NjAA4ODgAAAAAAAAAAAAAAAABCQkIAODg4EUZGRoJVVVXwe3t7/7q6uv/W1tb/4uLi/+rq
+        6v/t7e3/6+vr/+Tk5P/Z2dn/y8vL/7y8vP+rq6v/rKys/8HBwf+srKz/dHR0/19fX/9PT0//RERE/1lZ
+        Wf+MjIz/dnZ2/1lZWcJJSUk6AAAAASoqKgAAAAAAAAAAAHx8fD6FhYW2n5+f/cjIyP/f39//zczN/+Tk
+        5P/y8vL/+fn5//38/f/7+vv/8/Pz/+bm5v/W1tb/xcXF/7Ozs/+oqKj/oKCg/4qKiv9xcXH/YmJi/1NT
+        U/9DQ0P/YGBg/+Hh4f/p6en/w8PD/5ubm+aIiIhud3d3DH5+fgAAAAAAjY2Ne6ysrL28vLzjw8LD+cfH
+        x//Dw8P/6urq//r6+v/8/Pz/4+Pj/+Hh4f/n5+f/5OTk/9vb2//Kysr/uLi4/6enp/+VlZX/e3t7/2Fh
+        Yf9gYGD/VVVV/0RERP9eXl7/ycnJ/9DQ0P7KysrwwcHB06ampp19fX0niYmJAAAAAAAAAAAAOjk6CVpa
+        WiNmZmZOkZGRyNHR0f/x8fH//v3+/8nJyf9vb2//mZmZ/8rKyv/MzMz/0dHR/8vLy/+5ubn/p6en/52d
+        nf+VlJX/dnZ2/15eXv9VVVX/RUVF/1ZWVv9+fn71dXV1fmlpaTVTU1MUHR0dAz4+PgAAAAAAAAAAAAAA
+        AAAAAAAAZmZmAM7OzgCysrJb3Nzc+u3t7f/8/Pz/rq6u/2pqav+6urr/5ubm/8vLy//FxcX/yMjI/7i4
+        uP+lpaX/o6Oj/7CwsP+MjIz/YGBg/1RUVP9GRkb/Xl5e/3V1dbZoaGgMa2trAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAABdXV0AV1dXAFZWVlNqamr4mJiY/9bW1v+0tLT/kZGR/9nZ2f/Ozs7/wMDA/8vL
+        y//FxcX/s7Oz/5+fn/+MjIz/qqqq/6Ojo/9mZmb/UlJS/01NTf9gYGDpZmZmQ2dnZwBRUVEAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAF9fXwAAAAAAUlJSbUtLS/eUlJT/09PT/7u7u//CwsL/1tbW/9bW
+        1v/Z2dn/0tLS/8LCwv+xsbH/mpqa/4CAgP+CgoL/n5+f/3Jycv9VVVX/Xl5e/2BgYKxRUVEFXFxcAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAW1tbAEpKSgBHR0dRgICA+OTk5P/p6en/xMTE/97e
+        3v/o6Oj/39/f/9HR0f/IyMj/urq6/6ioqP+mpqb/h4eH/3BwcP94eHj/eXl5/4aGhv+tra3/fHx80lFR
+        URhbW1sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABWVlYABQUFBHx8fKLLy8v/y8vL8JiY
+        mLuoqKi8ysrK+aurq/+3t7f/uLi4/7e3t/+JiYn/m5ub/97e3v+hoaH/f39//5iYmP6IiIj0oKCg/NjY
+        2P+pqan3ZWVlTG1tbQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHZ2dgBzc3MkpKSktays
+        rIl2dnY6Pj4+C6WlpQ6BgYFxZmZm9c7Ozv/m5ub/r6+v/4iIiP97e3v/0dHR/52dnf6Kiorhi4uLlGtr
+        a0JxcXF1mZmZz7y8vP6QkJCT////AF5eXgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeHh4AHZ2
+        dg2AgIAWBgYGATAwMAAAAAAAUFBQAENDQxxsbGzc4ODg/9XV1fuDg4PQioqK929vb/2zs7P/mpqa3GFh
+        YTJMTEwCUVFRAAAAAABYWFgXkZGRYpaWlo5nZ2cQaWlpAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABVVVUAKCgoCn19fcDc3Nz/oKCgtFJSUihvb2+7bW1tp5OT
+        k9OZmZmkAAAAAl1dXQAAAAAAAAAAAA4ODgD///8Abm5uCWpqagRnZ2cAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFtbWwAAAAAAl5eXn729vdFwcHAogICAAGho
+        aDVlZWUffn5+SIWFhU+cnJwAWlpaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAY2NjANvb2wCUlJRqmJiYTeHh
+        4QAmJiYAAAAAAEBAQAA/Pz8CRkZGBERERAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAA/gAB5+AAAAfgAAAB4AAAAP4AAAHzYACP8IAOP/AAAD/wAAA/+AAAP/gA
+        AD/wAAB/8AAAPwAAAAMAAAADAAAAA4AAAA/AAAAfgAAABwAAAAMAAAADgAAAB/AAAD/wAAB/8AAAf/AA
+        AH/gAAB/4AAAf+OADD//gB8//8Q////PP/8=
+</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
-  <data name="button1.Text" xml:space="preserve">
-    <value>Об игре</value>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Настройки</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Settings</value>
   </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Настройки</value>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="MusicSwitch.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Comic Sans MS, 18pt</value>
-  </data>
-  <data name="$this.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>131, 225</value>
-  </data>
-  <data name="&gt;&gt;SFXSwitch.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="SFXSwitch.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Comic Sans MS, 18pt</value>
-  </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
 </root>

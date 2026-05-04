@@ -205,7 +205,7 @@
     <value>Тебе стоит отдохнуть... может взять перерыв и поспать? Уже </value>
   </data>
   <data name="NightMessage2" xml:space="preserve">
-    <value> ночи. Я буду ждать тебя тут. Спокойной ночи.</value>
+    <value> ночи. Спокойной ночи. Пойдёшь спать?</value>
   </data>
   <data name="NightMessageTitle" xml:space="preserve">
     <value>Иди спать, </value>

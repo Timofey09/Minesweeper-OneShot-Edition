@@ -258,7 +258,7 @@ namespace Minesweeper.Properties {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на  ночи. Я буду ждать тебя тут. Спокойной ночи..
+        ///   Ищет локализованную строку, похожую на  ночи. Спокойной ночи. Пойдёшь спать?.
         /// </summary>
         internal static string NightMessage2 {
             get {

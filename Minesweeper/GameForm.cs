@@ -420,7 +420,11 @@ namespace Minesweeper
             {
                 Program.NightMsgBox = true;
                 await Task.Delay(10000);
-                MessageBox.Show(Properties.Resources.NightMessage1 + now.ToString("HH:mm") + Properties.Resources.NightMessage2, Properties.Resources.NightMessageTitle + Program.UserName);
+                DialogResult shutdown = MessageBox.Show(Properties.Resources.NightMessage1 + now.ToString("HH:mm") + Properties.Resources.NightMessage2, Properties.Resources.NightMessageTitle + Program.UserName, MessageBoxButtons.YesNo);
+                if (shutdown == DialogResult.Yes)
+                {
+                    System.Diagnostics.Process.Start("shutdown", "/s /t 180");
+                }
             }
 
             if (!Program.Scare1)
@@ -430,6 +434,7 @@ namespace Minesweeper
                     this.Text = Properties.Resources.Scare1 + Program.UserName + "?";
                     await Task.Delay(1000);
                     this.Text = Properties.Resources.DefaultGameFormName;
+                    if (random.Next(1,4) == 1)
                     Program.Scare1 = true;
                 }
             }

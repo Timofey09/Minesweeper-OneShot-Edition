@@ -208,7 +208,7 @@ We did it, </value>
     <value>It's really late. You look tired... maybe you should take a break and get some sleep? It's </value>
   </data>
   <data name="NightMessage2" xml:space="preserve">
-    <value> already. I'll be here when you wake up. Goodnight.</value>
+    <value> already. Goodnight. Are you going to sleep?</value>
   </data>
   <data name="NightMessageTitle" xml:space="preserve">
     <value>Go to sleep, </value>

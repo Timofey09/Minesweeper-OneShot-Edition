@@ -8,6 +8,7 @@ using System.Drawing.Text;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Runtime.InteropServices;
 using System.Threading.Tasks;
 using System.Windows.Forms; 
 
@@ -15,6 +16,9 @@ namespace Minesweeper
 {
     public partial class MainMenu : Form
     {
+        [DllImport("dwmapi.dll")]
+        private static extern int DwmSetWindowAttribute(IntPtr hwnd, int attr, ref int attrValue, int attrSize);
+        private const int DWMWA_CAPTION_COLOR = 35;
         public string resourcesPath;
         private HowToPlay guide; 
         private Settings settings;
@@ -23,6 +27,7 @@ namespace Minesweeper
         {
             //System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en-US"); // Временная строка для проверки англ. локализации
             InitializeComponent();
+
             resourcesPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Resources");
             Version v = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version;
             label3.Text = "v" + v.Major + "." + v.Minor + "." + v.Build;
@@ -102,6 +107,17 @@ namespace Minesweeper
 
         public void MainMenu_Load(object sender, EventArgs e)
         {
+            try 
+            {
+                int titleBarColor = 0x001A0218; 
+                DwmSetWindowAttribute(this.Handle, DWMWA_CAPTION_COLOR, ref titleBarColor, sizeof(int));
+                this.Refresh();
+            }
+            catch
+            {
+                // This won't work on systems except Win11
+            }
+
             Program.PlayMenuBGM();
         }
 

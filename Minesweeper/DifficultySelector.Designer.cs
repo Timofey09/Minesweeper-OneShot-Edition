@@ -128,6 +128,7 @@
             this.MaximizeBox = false;
             this.Name = "DifficultySelector";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.DifficultySelector_FormClosed);
+            this.Load += new System.EventHandler(this.DifficultySelector_Load);
             ((System.ComponentModel.ISupportInitialize)(this.difficultyTrackBar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer2)).EndInit();

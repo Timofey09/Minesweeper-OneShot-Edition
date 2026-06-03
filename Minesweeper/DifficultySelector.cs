@@ -3,12 +3,16 @@ using Minesweeper.Properties;
 using System;
 using System.Drawing;
 using System.IO;
+using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
 namespace Minesweeper
 {
     public partial class DifficultySelector : Form
     {
+        [DllImport("dwmapi.dll")]
+        private static extern int DwmSetWindowAttribute(IntPtr hwnd, int attr, ref int attrValue, int attrSize);
+        private const int DWMWA_CAPTION_COLOR = 35;
         private bool suppressScrollSound = false;
 
         public DifficultySelector()
@@ -110,6 +114,11 @@ namespace Minesweeper
         {
             new MainMenu().Show();
             Program.PlayNoSound();
+        }
+
+        private void DifficultySelector_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -236,6 +236,51 @@ namespace Minesweeper.Properties {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Ты прервал мою поездку, .
+        /// </summary>
+        internal static string ForceCloseMsgBox1 {
+            get {
+                return ResourceManager.GetString("ForceCloseMsgBox1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на  И лампочка разбилась....
+        /// </summary>
+        internal static string ForceCloseMsgBox2 {
+            get {
+                return ResourceManager.GetString("ForceCloseMsgBox2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Попросишь прощения?.
+        /// </summary>
+        internal static string ForceCloseMsgBox3 {
+            get {
+                return ResourceManager.GetString("ForceCloseMsgBox3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на ...Я так и знал..
+        /// </summary>
+        internal static string ForceCloseMsgBoxNo {
+            get {
+                return ResourceManager.GetString("ForceCloseMsgBoxNo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на ...Ладно. Но в следующий раз будь осторожнее..
+        /// </summary>
+        internal static string ForceCloseMsgBoxYes {
+            get {
+                return ResourceManager.GetString("ForceCloseMsgBoxYes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Глен.
         /// </summary>
         internal static string Glen {
@@ -263,6 +308,15 @@ namespace Minesweeper.Properties {
         internal static string HowToPlayText {
             get {
                 return ResourceManager.GetString("HowToPlayText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на ru.
+        /// </summary>
+        internal static string Language {
+            get {
+                return ResourceManager.GetString("Language", resourceCulture);
             }
         }
         
@@ -303,12 +357,30 @@ namespace Minesweeper.Properties {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Нико.
+        /// </summary>
+        internal static string Niko {
+            get {
+                return ResourceManager.GetString("Niko", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap niko_message {
             get {
                 object obj = ResourceManager.GetObject("niko_message", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Нико на роботе-пылесосе.
+        /// </summary>
+        internal static string NikoOnRoomba {
+            get {
+                return ResourceManager.GetString("NikoOnRoomba", resourceCulture);
             }
         }
         

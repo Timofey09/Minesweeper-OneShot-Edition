@@ -78,8 +78,9 @@ namespace Minesweeper
                 int x = rnd.Next(width);
                 int y = rnd.Next(height);
 
-                if (map[x, y] == -1) continue;
-                if (x == safeX && y == safeY) continue;
+                bool isSafeZone = (x >= safeX - 1 && x <= safeX + 1) &&
+                                  (y >= safeY - 1 && y <= safeY + 1);
+                if (map[x, y] == -1 || isSafeZone) continue;
 
                 map[x, y] = -1;
                 placed++;

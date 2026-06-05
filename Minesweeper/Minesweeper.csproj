@@ -92,6 +92,12 @@
     <Compile Include="About.Designer.cs">
       <DependentUpon>About.cs</DependentUpon>
     </Compile>
+    <Compile Include="NikoRoomba.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NikoRoomba.Designer.cs">
+      <DependentUpon>NikoRoomba.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Resources.en.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -123,6 +129,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="NikoRoomba.resx">
+      <DependentUpon>NikoRoomba.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\IT%27S TIME TO FIGHT CRIME.mp3" />
+    <EmbeddedResource Include="Resources\NikoRoombaDown.png" />
+    <EmbeddedResource Include="Resources\NikoRoombaLeft.png" />
+    <EmbeddedResource Include="Resources\NikoRoombaRight.png" />
+    <EmbeddedResource Include="Resources\NikoRoombaUp.png" />
     <EmbeddedResource Include="About.en.resx">
       <DependentUpon>About.cs</DependentUpon>
     </EmbeddedResource>
@@ -184,9 +198,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Content Include="Minesweeper_2005.ico" />
-    <Content Include="Resources\niko_message-en.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    <EmbeddedResource Include="Resources\niko_message-en.png" />
     <Content Include="Resources\Terminus %28TTF%29 Bold.ttf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -227,36 +239,16 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <Content Include="Resources\item_get.wav">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\menu_cancel.wav">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\menu_cursor.wav">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\menu_decision.wav">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\niko_message.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\puzzle_solved.wav">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\On Little Cat Feet.mp3">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\Abandoned Factory.mp3">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\shatter.wav">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\tock.wav">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    <EmbeddedResource Include="Resources\item_get.wav" />
+    <EmbeddedResource Include="Resources\menu_cancel.wav" />
+    <EmbeddedResource Include="Resources\menu_cursor.wav" />
+    <EmbeddedResource Include="Resources\menu_decision.wav" />
+    <EmbeddedResource Include="Resources\niko_message.png" />
+    <EmbeddedResource Include="Resources\puzzle_solved.wav" />
+    <EmbeddedResource Include="Resources\On Little Cat Feet.mp3" />
+    <EmbeddedResource Include="Resources\Abandoned Factory.mp3" />
+    <EmbeddedResource Include="Resources\shatter.wav" />
+    <EmbeddedResource Include="Resources\tock.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

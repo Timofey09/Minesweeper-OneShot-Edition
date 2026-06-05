@@ -139,7 +139,7 @@
     <value>NIGHTMARE</value>
   </data>
   <data name="Difficulty3Description" xml:space="preserve">
-    <value>875 cells, 300 mines. One chance. Do you really want that?</value>
+    <value>875 cells, 250 mines. One chance. Do you really want that?</value>
   </data>
   <data name="Mines" xml:space="preserve">
     <value>Mines</value>
@@ -212,5 +212,20 @@ We did it, </value>
   </data>
   <data name="NightMessageTitle" xml:space="preserve">
     <value>Go to sleep, </value>
+  </data>
+  <data name="Auto-Theme" xml:space="preserve">
+    <value>Auto-theme</value>
+  </data>
+  <data name="Barrens" xml:space="preserve">
+    <value>Barrens</value>
+  </data>
+  <data name="Glen" xml:space="preserve">
+    <value>Glen</value>
+  </data>
+  <data name="Refuge" xml:space="preserve">
+    <value>Refuge</value>
+  </data>
+  <data name="The-Tower" xml:space="preserve">
+    <value>The Tower</value>
   </data>
 </root>

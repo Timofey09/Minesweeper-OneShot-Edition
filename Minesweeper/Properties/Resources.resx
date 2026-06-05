@@ -139,7 +139,7 @@
     <value>БЕЗУМИЕ</value>
   </data>
   <data name="Difficulty3Description" xml:space="preserve">
-    <value>875 клеток, 300 мин. Один шанс. Ты точно этого хочешь?</value>
+    <value>875 клеток, 250 мин. Один шанс. Ты точно этого хочешь?</value>
   </data>
   <data name="Mines" xml:space="preserve">
     <value>Мины</value>
@@ -209,5 +209,20 @@
   </data>
   <data name="NightMessageTitle" xml:space="preserve">
     <value>Иди спать, </value>
+  </data>
+  <data name="Auto-Theme" xml:space="preserve">
+    <value>Авто-тема</value>
+  </data>
+  <data name="Barrens" xml:space="preserve">
+    <value>Пустоши</value>
+  </data>
+  <data name="Glen" xml:space="preserve">
+    <value>Глен</value>
+  </data>
+  <data name="Refuge" xml:space="preserve">
+    <value>Пристанище</value>
+  </data>
+  <data name="The-Tower" xml:space="preserve">
+    <value>Башня</value>
   </data>
 </root>

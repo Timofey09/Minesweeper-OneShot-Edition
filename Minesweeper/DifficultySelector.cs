@@ -23,14 +23,25 @@ namespace Minesweeper
 
         private void DifficultySelector_Shown(object sender, EventArgs e)
         {
+
             label1.Font = new Font(Program.pfc.Families[0], 22, FontStyle.Regular);
             label2.Font = new Font(Program.pfc.Families[0], 20, FontStyle.Regular);
             label3.Font = new Font(Program.pfc.Families[0], 12, FontStyle.Regular);
             label4.Font = new Font(Program.pfc.Families[0], 19, FontStyle.Regular);
             label5.Font = new Font(Program.pfc.Families[0], 19, FontStyle.Regular);
             LaunchButton.Font = new Font(Program.pfc.Families[0], 15, FontStyle.Regular);
+            comboBox1.Font = new Font(Program.pfc.Families[0], 13, FontStyle.Regular);
+            checkBox1.Font = new Font(Program.pfc.Families[0], 15, FontStyle.Regular);
+            suppressScrollSound = true;
 
-            suppressScrollSound = true; 
+            comboBox1.Items.Clear();
+            comboBox1.Items.Add(Properties.Resources.Barrens);
+            comboBox1.Items.Add(Properties.Resources.Glen);
+            comboBox1.Items.Add(Properties.Resources.Refuge);
+            comboBox1.Items.Add(Properties.Resources.The_Tower);
+            Program.Theme = 0;
+            checkBox1.Text = Properties.Resources.Auto_Theme;
+            comboBox1.SelectedIndex = 0;
 
             if (Program.MapWidth == 9 && Program.MapHeight == 9) difficultyTrackBar.Value = 0;
             else if (Program.MapWidth == 16 && Program.MapHeight == 16) difficultyTrackBar.Value = 1;
@@ -38,7 +49,7 @@ namespace Minesweeper
             else if (Program.MapWidth == 35 && Program.MapHeight == 25) difficultyTrackBar.Value = 3;
             else difficultyTrackBar.Value = 0;
 
-            suppressScrollSound = false; 
+            suppressScrollSound = false;
             UpdateDifficultyUI(); 
         }
 
@@ -61,32 +72,27 @@ namespace Minesweeper
             switch (difficultyTrackBar.Value)
             {
                 case 0:
-                    SetDifficulty(9, 9, 10, Properties.Resources.Difficulty0Name, Properties.Resources.Difficulty0Description, Color.MediumVioletRed);
+                    SetDifficulty(9, 9, 10, Properties.Resources.Difficulty0Name, Properties.Resources.Difficulty0Description, Color.MediumVioletRed, 0);
                     break;
                 case 1:
-                    SetDifficulty(16, 16, 40, Properties.Resources.Difficulty1Name, Properties.Resources.Difficulty1Description, Color.MediumVioletRed);
+                    SetDifficulty(16, 16, 40, Properties.Resources.Difficulty1Name, Properties.Resources.Difficulty1Description, Color.MediumVioletRed, 1);
                     break;
                 case 2:
-                    SetDifficulty(30, 16, 99, Properties.Resources.Difficulty2Name, Properties.Resources.Difficulty2Description, Color.MediumVioletRed);
+                    SetDifficulty(30, 16, 99, Properties.Resources.Difficulty2Name, Properties.Resources.Difficulty2Description, Color.MediumVioletRed, 2);
                     break;
                 case 3:
-                    Program.MapWidth = 35;
-                    Program.MapHeight = 25;
-                    Program.MinesCount = 300;
+                    SetDifficulty(35, 25, 250, Properties.Resources.Difficulty3Name, Properties.Resources.Difficulty3Description, Color.Red, 3);
                     difficultyTrackBar.BackColor = Color.Red;
                     label2.ForeColor = Color.Red;
-                    label2.Text = Properties.Resources.Difficulty3Name;
                     label3.ForeColor = Color.Red;
-                    label3.Text = Properties.Resources.Difficulty3Description;
                     label4.ForeColor = Color.Red;
-                    label4.Text = Properties.Resources.Field + ": 3̸̤̇̌5̷͕̅͒͐x̴͖͇͋͘̚2̴̧̬̈́̇͗5̷͚̂̃";
                     label5.ForeColor = Color.Red;
-                    label5.Text = Properties.Resources.Mines + ": 3̷̫̟̈́̀0̷̧̯̫͝0̴̥̙̪̐";
+                    checkBox1.ForeColor = Color.Red;
                     break;
             }
         }
 
-        private void SetDifficulty(int w, int h, int m, string title, string desc, Color color)
+        private void SetDifficulty(int w, int h, int m, string title, string desc, Color color, int theme)
         {
             Program.MapWidth = w;
             Program.MapHeight = h;
@@ -100,10 +106,24 @@ namespace Minesweeper
             label4.Text = Properties.Resources.Field + ": " + w + "x" + h;
             label5.ForeColor = Color.White;
             label5.Text = Properties.Resources.Mines + ": " + m;
+            checkBox1.ForeColor = Color.White;
+            if (checkBox1.Checked)
+            {
+                comboBox1.SelectedIndex = theme;
+            }
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (!checkBox1.Checked)
+            {
+                Program.Theme = comboBox1.SelectedIndex;
+            }
         }
 
         private void LaunchButton_Click(object sender, EventArgs e)
         {
+            Program.Theme = comboBox1.SelectedIndex;
             Program.StopBGM();
             Program.PlayStartSound();
             new GameForm().Show();
@@ -118,7 +138,29 @@ namespace Minesweeper
 
         private void DifficultySelector_Load(object sender, EventArgs e)
         {
+            try
+            {
+                int titleBarColor = 0x001A0218;
+                DwmSetWindowAttribute(this.Handle, DWMWA_CAPTION_COLOR, ref titleBarColor, sizeof(int));
+                this.Refresh();
+            }
+            catch
+            {
+                // This won't work on systems except Win11
+            }
+        }
 
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            Program.PlayOpenSound();
+            if (checkBox1.Checked)
+            {
+                comboBox1.Enabled = false;
+            }
+            else if (!checkBox1.Checked)
+            {
+                comboBox1.Enabled = true;
+            }
         }
     }
 }

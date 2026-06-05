@@ -123,7 +123,7 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="MusicSwitch.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Comic Sans MS, 18pt</value>
+    <value>Terminus (TTF), 18pt, style=Bold</value>
   </data>
   <data name="MusicSwitch.Location" type="System.Drawing.Point, System.Drawing">
     <value>116, 96</value>
@@ -133,7 +133,7 @@
     <value>4, 4, 4, 4</value>
   </data>
   <data name="MusicSwitch.Size" type="System.Drawing.Size, System.Drawing">
-    <value>149, 46</value>
+    <value>101, 28</value>
   </data>
   <data name="MusicSwitch.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -157,7 +157,7 @@
     <value>True</value>
   </data>
   <data name="SFXSwitch.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Comic Sans MS, 18pt</value>
+    <value>Terminus (TTF), 18pt, style=Bold</value>
   </data>
   <data name="SFXSwitch.Location" type="System.Drawing.Point, System.Drawing">
     <value>116, 154</value>
@@ -166,7 +166,7 @@
     <value>4, 4, 4, 4</value>
   </data>
   <data name="SFXSwitch.Size" type="System.Drawing.Size, System.Drawing">
-    <value>123, 46</value>
+    <value>89, 28</value>
   </data>
   <data name="SFXSwitch.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -193,7 +193,7 @@
     <value>True</value>
   </data>
   <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Comic Sans MS, 18pt</value>
+    <value>Terminus (TTF), 20.2499981pt, style=Bold</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
     <value>96, 36</value>
@@ -202,7 +202,7 @@
     <value>4, 0, 4, 0</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>172, 42</value>
+    <value>138, 28</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -226,7 +226,7 @@
     <value>Flat</value>
   </data>
   <data name="button1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Comic Sans MS, 11.25pt</value>
+    <value>Terminus (TTF), 12pt, style=Bold</value>
   </data>
   <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
     <value>131, 225</value>

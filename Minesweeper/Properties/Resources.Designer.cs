@@ -61,6 +61,24 @@ namespace Minesweeper.Properties {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Авто-тема.
+        /// </summary>
+        internal static string Auto_Theme {
+            get {
+                return ResourceManager.GetString("Auto-Theme", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Пустоши.
+        /// </summary>
+        internal static string Barrens {
+            get {
+                return ResourceManager.GetString("Barrens", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Клетка.
         /// </summary>
         internal static string Cell {
@@ -133,7 +151,7 @@ namespace Minesweeper.Properties {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на 875 клеток, 300 мин. Один шанс. Ты точно этого хочешь?.
+        ///   Ищет локализованную строку, похожую на 875 клеток, 250 мин. Один шанс. Ты точно этого хочешь?.
         /// </summary>
         internal static string Difficulty3Description {
             get {
@@ -218,6 +236,15 @@ namespace Minesweeper.Properties {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Глен.
+        /// </summary>
+        internal static string Glen {
+            get {
+                return ResourceManager.GetString("Glen", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Сапёр — игра несложная.
         ///Она полностью построена на логике и иногда на везении.
         ///
@@ -286,11 +313,29 @@ namespace Minesweeper.Properties {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Пристанище.
+        /// </summary>
+        internal static string Refuge {
+            get {
+                return ResourceManager.GetString("Refuge", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Ты еще тут, .
         /// </summary>
         internal static string Scare1 {
             get {
                 return ResourceManager.GetString("Scare1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Башня.
+        /// </summary>
+        internal static string The_Tower {
+            get {
+                return ResourceManager.GetString("The-Tower", resourceCulture);
             }
         }
         

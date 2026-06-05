@@ -14,6 +14,7 @@ namespace Minesweeper
     internal static class Program
     {
         public static string UserName = Environment.UserName;
+        public static int Theme = 0;
         public static int MapWidth = 9;
         public static int MapHeight = 9;
         public static int MinesCount = 10;

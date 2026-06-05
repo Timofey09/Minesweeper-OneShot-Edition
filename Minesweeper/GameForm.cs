@@ -13,6 +13,11 @@ namespace Minesweeper
 {
     public partial class GameForm : Form
     {
+        [DllImport("dwmapi.dll")]
+        private static extern int DwmSetWindowAttribute(IntPtr hwnd, int attr, ref int attrValue, int attrSize);
+        private const int DWMWA_CAPTION_COLOR = 35;
+
+
         int width = Program.MapWidth;
         int height = Program.MapHeight;
         int minesCount = Program.MinesCount;
@@ -45,6 +50,22 @@ namespace Minesweeper
         public void GameForm_Load(object sender, EventArgs e)
         {
             Program.PlayGameBGM();
+
+            int titleBarColor = 0;
+
+            switch (Program.Theme)
+            {
+                case 0: titleBarColor = 0x002B1114; break;
+                case 1: titleBarColor = 0x004F3B2C; break;
+                case 2: titleBarColor = 0x00210A1D; break;
+                case 3: titleBarColor = 0x00000000; break;
+            }
+            
+            try
+            {
+                DwmSetWindowAttribute(this.Handle, DWMWA_CAPTION_COLOR, ref titleBarColor, sizeof(int));
+            }
+            catch { }
         }
 
         void GenerateMines(int safeX, int safeY)
@@ -350,45 +371,93 @@ namespace Minesweeper
         {
             Graphics g = e.Graphics;
             Font font = new Font("Segoe UI Emoji", 14);
-            
 
-            for (int x = 0; x < width; x++)
+            Color openColor = Color.White;
+            Color closedColor = Color.LightGray;
+            Color gridColor = Color.Gray;
+
+            switch (Program.Theme)
             {
-                for (int y = 0; y < height; y++)
+                case 0:
+                    closedColor = Color.FromArgb(20, 17, 43);
+                    openColor = Color.FromArgb(58, 54, 113);  
+                    gridColor = Color.FromArgb(99, 95, 188);
+                    break;
+
+                case 1:
+                    closedColor = Color.FromArgb(44, 59, 79);  
+                    openColor = Color.FromArgb(14, 93, 65);     
+                    gridColor = Color.FromArgb(22, 139, 112);
+                    break;
+
+                case 2:
+                    closedColor = Color.FromArgb(29, 10, 33);    
+                    openColor = Color.FromArgb(94, 31, 67);     
+                    gridColor = Color.FromArgb(230, 62, 111);
+                    break;
+
+                case 3:
+                    closedColor = Color.FromArgb(0, 0, 0);   
+                    openColor = Color.FromArgb(50, 20, 90);  
+                    gridColor = Color.FromArgb(150, 100, 255);
+                    break;
+            }
+
+            using (SolidBrush openBrush = new SolidBrush(openColor))
+            using (SolidBrush closedBrush = new SolidBrush(closedColor))
+            using (Pen gridPen = new Pen(gridColor, 1f))
+            {
+                for (int x = 0; x < width; x++)
                 {
-                    Rectangle rect = new Rectangle(x * cellSize, y * cellSize, cellSize, cellSize);
-
-                    if (revealed[x, y])
+                    for (int y = 0; y < height; y++)
                     {
-                        g.FillRectangle(Brushes.White, rect);
+                        Rectangle rect = new Rectangle(x * cellSize, y * cellSize, cellSize, cellSize);
 
-                        if (map[x, y] == -1)
-                            g.FillEllipse(Brushes.Black, rect.X + 5, rect.Y + 5, cellSize - 10, cellSize - 10);
-                        else if (map[x, y] > 0)
+                        if (revealed[x, y])
                         {
-                            Brush color = Brushes.Black;
-                            if (map[x, y] == 1) color = Brushes.Blue;
-                            else if (map[x, y] == 2) color = Brushes.Green;
-                            else if (map[x, y] == 3) color = Brushes.Red;
-                            else if (map[x, y] == 4) color = Brushes.DarkBlue;
-                            else if (map[x, y] == 5) color = Brushes.DarkRed;
-                            else if (map[x, y] == 6) color = Brushes.Cyan;
-                            else if (map[x, y] == 7) color = Brushes.Black;
-                            else if (map[x, y] == 8) color = Brushes.Gray;
-                            else if (map[x, y] == 9) color = Brushes.Purple;
+                            g.FillRectangle(openBrush, rect);
 
-                            g.DrawString(map[x, y].ToString(), font, color, rect.X + 5, rect.Y);
+                            if (map[x, y] == -1)
+                            {
+                                Brush mineBrush = (Program.Theme == 3) ? Brushes.Gold : Brushes.Black;
+                                g.FillEllipse(mineBrush, rect.X + 5, rect.Y + 5, cellSize - 10, cellSize - 10);
+                            }
+                            else if (map[x, y] > 0)
+                            {
+                                Brush color = Brushes.White;
+
+                                if (Program.Theme == 3)
+                                {
+                                    color = (map[x, y] % 2 == 0) ? Brushes.Red : Brushes.Orange;
+                                }
+                                else
+                                {
+                                    if (map[x, y] == 1) color = Brushes.DeepSkyBlue;
+                                    else if (map[x, y] == 2) color = Brushes.LightGreen;
+                                    else if (map[x, y] == 3) color = Brushes.Tomato;
+                                    else if (map[x, y] == 4) color = Brushes.CornflowerBlue;
+                                    else if (map[x, y] == 5) color = Brushes.Crimson;
+                                    else if (map[x, y] == 6) color = Brushes.Cyan;
+                                    else if (map[x, y] == 7) color = Brushes.White;
+                                    else if (map[x, y] == 8) color = Brushes.DarkGray;
+                                    else if (map[x, y] == 9) color = Brushes.Violet;
+                                }
+
+                                g.DrawString(map[x, y].ToString(), font, color, rect.X + 5, rect.Y);
+                            }
                         }
-                    }
-                    else
-                    {
-                        g.FillRectangle(Brushes.LightGray, rect);
+                        else
+                        {
+                            g.FillRectangle(closedBrush, rect);
 
-                        if (flagged[x, y])
-                            g.DrawString("🚩", font, Brushes.Red, rect.X - 2, rect.Y);
-                    }
+                            if (flagged[x, y])
+                            {
+                                g.DrawString("🚩", font, Brushes.Red, rect.X - 2, rect.Y);
+                            }
+                        }
 
-                    g.DrawRectangle(Pens.Gray, rect);
+                        g.DrawRectangle(gridPen, rect);
+                    }
                 }
             }
         }

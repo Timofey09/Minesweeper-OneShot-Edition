@@ -228,4 +228,28 @@ We did it, </value>
   <data name="The-Tower" xml:space="preserve">
     <value>The Tower</value>
   </data>
+  <data name="NikoOnRoomba" xml:space="preserve">
+    <value>Niko on roomba</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>en</value>
+  </data>
+  <data name="Niko" xml:space="preserve">
+    <value>Niko</value>
+  </data>
+  <data name="ForceCloseMsgBox1" xml:space="preserve">
+    <value>You interrupted my ride, </value>
+  </data>
+  <data name="ForceCloseMsgBox2" xml:space="preserve">
+    <value> And the lightbulb shattered...</value>
+  </data>
+  <data name="ForceCloseMsgBox3" xml:space="preserve">
+    <value>Will you apologize?</value>
+  </data>
+  <data name="ForceCloseMsgBoxYes" xml:space="preserve">
+    <value>...Okay. But be careful next time.</value>
+  </data>
+  <data name="ForceCloseMsgBoxNo" xml:space="preserve">
+    <value>...I knew it.</value>
+  </data>
 </root>

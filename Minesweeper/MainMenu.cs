@@ -19,16 +19,14 @@ namespace Minesweeper
         [DllImport("dwmapi.dll")]
         private static extern int DwmSetWindowAttribute(IntPtr hwnd, int attr, ref int attrValue, int attrSize);
         private const int DWMWA_CAPTION_COLOR = 35;
-        public string resourcesPath;
         private HowToPlay guide; 
         private Settings settings;
-        
+
         public MainMenu()
         {
             //System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en-US"); // Временная строка для проверки англ. локализации
             InitializeComponent();
 
-            resourcesPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Resources");
             Version v = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version;
             label3.Text = "v" + v.Major + "." + v.Minor + "." + v.Build;
             LoadCustomFont();
@@ -36,17 +34,15 @@ namespace Minesweeper
 
         public void LoadCustomFont()
         {
+
             try
             {
-                string fontPath = Path.Combine(resourcesPath, "Terminus (TTF) Bold.ttf");
-
-                if (File.Exists(fontPath))
+                if (Program.pfc.Families.Length > 0)
                 {
-                    Program.pfc.AddFontFile(fontPath);
-                    Font customFont = new Font(Program.pfc.Families[0], 14, FontStyle.Regular);
                     label1.Font = new Font(Program.pfc.Families[0], 30, FontStyle.Regular);
                     label2.Font = new Font(Program.pfc.Families[0], 12, FontStyle.Regular);
                     label3.Font = new Font(Program.pfc.Families[0], 10, FontStyle.Regular);
+                    label4.Font = new Font(Program.pfc.Families[0], 13, FontStyle.Regular);
                     NewGameButton.Font = new Font(Program.pfc.Families[0], 11, FontStyle.Regular);
                     HowToPlayButton.Font = new Font(Program.pfc.Families[0], 11, FontStyle.Regular);
                     SettingsButton.Font = new Font(Program.pfc.Families[0], 11, FontStyle.Regular);
@@ -76,7 +72,6 @@ namespace Minesweeper
         private void NewGame_Click(object sender, EventArgs e)
         {
             Program.PlayYesSound();
-            Program.StopBGM();
             DifficultySelector difficultySelector = new DifficultySelector();
             if (guide != null && !guide.IsDisposed)
             {
@@ -121,8 +116,49 @@ namespace Minesweeper
             Program.PlayMenuBGM();
         }
 
-        private void MainMenu_FormClosed(object sender, FormClosedEventArgs e)
+        private void pictureBox2_Click(object sender, EventArgs e)
         {
+            pictureBox2.Enabled = false;
+            Timer hideTimer = new Timer();
+            hideTimer.Interval = 30;
+            hideTimer.Tick += (s, args) => {
+                if (this.Opacity > 0.05) this.Opacity -= 0.05;
+                else
+                {
+                    hideTimer.Stop();
+                    this.Visible = false;
+                    pictureBox2.Enabled = true;
+                }
+            };
+            hideTimer.Start();
+
+            NikoRoomba niko = new NikoRoomba(this);
+
+            niko.FormClosed += (s, args) => {
+                this.Visible = true;
+                this.Opacity = 0; 
+
+                Timer showTimer = new Timer();
+                showTimer.Interval = 30;
+                showTimer.Tick += (s2, e2) => {
+                    if (this.Opacity < 1.0) this.Opacity += 0.05;
+                    else showTimer.Stop();
+                };
+                showTimer.Start();
+                Program.PlayMenuBGM();
+            };
+
+            niko.Show();
+
+        }
+
+        private async Task MainMenu_FormClosing(object sender, FormClosedEventArgs e)
+        {
+            if (Program.NikoRidong)
+            {
+                Program.PlayLoseSound();
+                await Task.Delay(500);
+            }
             Application.Exit();
         }
     }

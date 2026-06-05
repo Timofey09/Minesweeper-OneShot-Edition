@@ -225,4 +225,28 @@
   <data name="The-Tower" xml:space="preserve">
     <value>Башня</value>
   </data>
+  <data name="NikoOnRoomba" xml:space="preserve">
+    <value>Нико на роботе-пылесосе</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>ru</value>
+  </data>
+  <data name="Niko" xml:space="preserve">
+    <value>Нико</value>
+  </data>
+  <data name="ForceCloseMsgBox1" xml:space="preserve">
+    <value>Ты прервал мою поездку, </value>
+  </data>
+  <data name="ForceCloseMsgBox2" xml:space="preserve">
+    <value> И лампочка разбилась...</value>
+  </data>
+  <data name="ForceCloseMsgBox3" xml:space="preserve">
+    <value>Попросишь прощения?</value>
+  </data>
+  <data name="ForceCloseMsgBoxYes" xml:space="preserve">
+    <value>...Ладно. Но в следующий раз будь осторожнее.</value>
+  </data>
+  <data name="ForceCloseMsgBoxNo" xml:space="preserve">
+    <value>...Я так и знал.</value>
+  </data>
 </root>

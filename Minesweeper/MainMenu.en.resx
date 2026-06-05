@@ -583,6 +583,9 @@
         AAAL
 </value>
   </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Party</value>
+  </data>
   <data name="$this.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAasAAADwCAYAAAC+L0vtAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO

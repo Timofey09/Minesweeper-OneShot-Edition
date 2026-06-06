@@ -100,8 +100,7 @@ namespace Minesweeper
                 string namespaceName = typeof(Program).Namespace;
                 string resourcePath = $"{namespaceName}.Resources.{fileName}";
 
-                string tempPath = Path.Combine(Path.GetTempPath(), fileName);
-
+                string tempPath = Path.Combine(Path.GetTempPath(), $"minesweeper_oneshot_{fileName}");
                 if (!File.Exists(tempPath))
                 {
                     using (Stream stream = assembly.GetManifestResourceStream(resourcePath))
@@ -159,11 +158,23 @@ namespace Minesweeper
         {
             try
             {
-                bgmPlayer.close(); 
+                bgmPlayer.close();
 
                 if (!string.IsNullOrEmpty(currentTempMp3Path) && File.Exists(currentTempMp3Path))
                 {
                     File.Delete(currentTempMp3Path);
+                }
+
+                string tempDir = Path.GetTempPath();
+                string[] remainingFiles = Directory.GetFiles(tempDir, "minesweeper_oneshot_*.*");
+
+                foreach (string file in remainingFiles)
+                {
+                    try
+                    {
+                        File.Delete(file);
+                    }
+                    catch { }
                 }
             }
             catch { }
